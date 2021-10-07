@@ -83,10 +83,6 @@ $ python train.py  --batch-size 4 --device 0
 python -m torch.distributed.launch --nproc_per_node 4 train.py --sync-bn --device 0,1,2,3
 ```
 
-![train_batch_mosaic0](./train_batch0.jpg)
-![train_batch_mosaic1](./train_batch1.jpg)
-![train_batch_mosaic2](./train_batch2.jpg)
-
 
 `3.` `'detect.py'` 
     
@@ -96,11 +92,6 @@ python -m torch.distributed.launch --nproc_per_node 4 train.py --sync-bn --devic
 ```
 $  python detect.py
 ```
-
-![detection_result_before_merge1](./P0004__1__0___0.png)
-![detection_result_before_merge2](./P0004__1__0___440.png)
-![draw_detection_result](./P1478__1__853___824.png)
-
 
 
 `4.` `'evaluation.py'` 
@@ -126,27 +117,7 @@ draw_DOTA_image
 $  python evaluation.py
 ```
 
-![detection_result_after_merge](./P0004_.png)
 
-
-## 有问题反馈
-在使用中有任何问题，欢迎反馈给我，可以用以下联系方式跟我交流
-
-* 知乎（@[略略略](https://www.zhihu.com/people/lue-lue-lue-3-92-86)）
-* 代码问题提issues,其他问题请知乎上联系
-
-
-## 感激
-感谢以下的项目,排名不分先后
-
-* [ultralytics/yolov5](https://github.com/ultralytics/yolov5).
-* [Thinklab-SJTU/CSL_RetinaNet_Tensorflow](https://github.com/Thinklab-SJTU/CSL_RetinaNet_Tensorflow).
-
-## 关于作者
-
-```javascript
-  Name  : "胡凯旋"
-  describe myself："咸鱼一枚"
   
 ```
 ## 更多
